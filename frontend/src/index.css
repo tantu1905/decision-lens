@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.985 0.002 247.839);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.21 0.006 285.885);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.705 0.015 286.067);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --good: oklch(0.627 0.194 149.214);
+  --fair: oklch(0.769 0.188 70.08);
+  --poor: oklch(0.577 0.245 27.325);
+  --pitch: oklch(0.52 0.14 150);
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.92 0.004 286.32);
+  --primary-foreground: oklch(0.21 0.006 285.885);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.552 0.016 285.938);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-good: var(--good);
+  --color-fair: var(--fair);
+  --color-poor: var(--poor);
+  --color-pitch: var(--pitch);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* the 3D replay: replay3d.js builds these elements itself */
+#replay .screen { position: relative; }
+#replay canvas { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+#replay .cap { position: absolute; left: 12px; top: 10px; color: #fff; background: rgba(0,0,0,.6); padding: 6px 10px; border-radius: 8px; font-weight: 600; }
+#replay .legend { position: absolute; right: 12px; top: 10px; color: #fff; background: rgba(0,0,0,.6); padding: 6px 10px; border-radius: 8px; font-size: 13px; line-height: 1.6; opacity: 0; }
+#replay .legend b { display: inline-block; width: 22px; height: 5px; margin-right: 6px; vertical-align: middle; border-radius: 3px; }
+#replay .legend b.dash { background: repeating-linear-gradient(90deg, #fff 0 5px, transparent 5px 9px); }
+#replay .cams { position: absolute; right: 12px; bottom: 10px; display: flex; gap: 2px; background: rgba(0,0,0,.6); padding: 3px; border-radius: 8px; }
+#replay .cams button, #replay .hint button { border: 0; background: transparent; color: #ddd; padding: 4px 10px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+#replay .cams button.on { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
+#replay .hint { position: absolute; left: 12px; bottom: 10px; display: flex; gap: 8px; align-items: center; color: #bbb; background: rgba(0,0,0,.6); padding: 3px 3px 3px 10px; border-radius: 8px; font-size: 12px; }
+#replay .hint button { background: rgba(255,255,255,.12); color: #fff; }
+#replay .bar { display: flex; gap: 8px; align-items: center; margin-top: 8px; font-size: 13px; }
+#replay .bar input { flex: 1; accent-color: var(--primary); }
+#replay .bar button { border: 1px solid var(--border); background: var(--card); color: var(--foreground); border-radius: 6px; padding: 3px 10px; cursor: pointer; }

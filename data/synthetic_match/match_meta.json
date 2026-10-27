@@ -1,0 +1,653 @@
+{
+  "match_id": "SYN-0135",
+  "synthetic": true,
+  "seed": 135,
+  "tracking_hz": 25,
+  "pitch": {
+    "length_m": 105.0,
+    "width_m": 68.0,
+    "origin": "home team's left corner, home attacks +x"
+  },
+  "teams": [
+    {
+      "team_id": "NRV",
+      "name": "Northbridge Rovers",
+      "side": "home"
+    },
+    {
+      "team_id": "SHA",
+      "name": "Southhaven Athletic",
+      "side": "away"
+    }
+  ],
+  "final_score": {
+    "home": 1,
+    "away": 1
+  },
+  "xt_source": "learned grid (xt_grid.json)",
+  "alert_thresholds": {
+    "sprint_kmh": 25.2,
+    "sprint_min_s": 1.0,
+    "sprint_cooldown_s": 900,
+    "top_speed_kmh": 32.0,
+    "distance_milestone_km": 2.5
+  },
+  "card_rates": {
+    "yellow_per_foul": 0.18,
+    "second_yellow_per_foul": 0.04,
+    "straight_red_per_foul": 0.005
+  },
+  "formations": {
+    "NRV": "4-4-2",
+    "SHA": "4-3-3"
+  },
+  "formation_changes": [],
+  "wind": {
+    "speed_ms": 4.4,
+    "direction_deg": 30
+  },
+  "press_height": {
+    "NRV": "mid",
+    "SHA": "mid"
+  },
+  "tactical_shifts": [
+    {
+      "minute": 26,
+      "team_id": "NRV",
+      "stance": "protect_lead"
+    },
+    {
+      "minute": 26,
+      "team_id": "SHA",
+      "stance": "push_forward"
+    },
+    {
+      "minute": 89,
+      "team_id": "NRV",
+      "stance": "balanced"
+    },
+    {
+      "minute": 89,
+      "team_id": "SHA",
+      "stance": "balanced"
+    }
+  ],
+  "game_plans": {
+    "NRV": {
+      "target_flank": "left",
+      "weak_defender": "SHA_05",
+      "aerial_threat": true
+    },
+    "SHA": {
+      "target_flank": "left",
+      "weak_defender": "NRV_05",
+      "aerial_threat": false
+    }
+  },
+  "players": [
+    {
+      "player_id": "NRV_01",
+      "team_id": "NRV",
+      "name": "Kenji Kaya",
+      "position": "GK",
+      "shirt": 1,
+      "max_speed": 6.57,
+      "height_cm": 190,
+      "strength": 0.34,
+      "technique": 0.53,
+      "defending": 0.61,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "GK",
+      "profile": "keeper"
+    },
+    {
+      "player_id": "NRV_02",
+      "team_id": "NRV",
+      "name": "Omar Aydin",
+      "position": "RB",
+      "shirt": 2,
+      "max_speed": 8.83,
+      "height_cm": 192,
+      "strength": 0.51,
+      "technique": 0.58,
+      "defending": 0.7,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "RB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "NRV_03",
+      "team_id": "NRV",
+      "name": "Theo Dubois",
+      "position": "CB",
+      "shirt": 3,
+      "max_speed": 8.57,
+      "height_cm": 189,
+      "strength": 0.71,
+      "technique": 0.36,
+      "defending": 0.86,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "CB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "NRV_04",
+      "team_id": "NRV",
+      "name": "Theo Sahin",
+      "position": "CB",
+      "shirt": 4,
+      "max_speed": 8.59,
+      "height_cm": 191,
+      "strength": 0.49,
+      "technique": 0.63,
+      "defending": 0.74,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "CB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "NRV_05",
+      "team_id": "NRV",
+      "name": "Elias Korhan",
+      "position": "LB",
+      "shirt": 5,
+      "max_speed": 8.41,
+      "height_cm": 178,
+      "strength": 0.67,
+      "technique": 0.25,
+      "defending": 0.61,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "LB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "NRV_10",
+      "team_id": "NRV",
+      "name": "Deniz Nakamura",
+      "position": "RW",
+      "shirt": 10,
+      "max_speed": 9.43,
+      "height_cm": 174,
+      "strength": 0.56,
+      "technique": 0.53,
+      "defending": 0.23,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "RM",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "NRV_07",
+      "team_id": "NRV",
+      "name": "Kenji Lindqvist",
+      "position": "CM",
+      "shirt": 7,
+      "max_speed": 8.33,
+      "height_cm": 184,
+      "strength": 0.49,
+      "technique": 0.8,
+      "defending": 0.42,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 79,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "NRV_08",
+      "team_id": "NRV",
+      "name": "Deniz Costa",
+      "position": "CM",
+      "shirt": 8,
+      "max_speed": 8.13,
+      "height_cm": 180,
+      "strength": 0.55,
+      "technique": 0.68,
+      "defending": 0.53,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 64,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "NRV_11",
+      "team_id": "NRV",
+      "name": "Ravi Quinn",
+      "position": "LW",
+      "shirt": 11,
+      "max_speed": 9.54,
+      "height_cm": 167,
+      "strength": 0.62,
+      "technique": 0.47,
+      "defending": 0.3,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 58,
+      "role": "LM",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "NRV_12",
+      "team_id": "NRV",
+      "name": "Hugo Novak",
+      "position": "ST",
+      "shirt": 12,
+      "max_speed": 9.34,
+      "height_cm": 182,
+      "strength": 0.54,
+      "technique": 0.33,
+      "defending": 0.35,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "ST",
+      "profile": "selfish_striker"
+    },
+    {
+      "player_id": "NRV_13",
+      "team_id": "NRV",
+      "name": "Kaan Sahin",
+      "position": "ST",
+      "shirt": 13,
+      "max_speed": 8.78,
+      "height_cm": 188,
+      "strength": 0.54,
+      "technique": 0.5,
+      "defending": 0.39,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "ST",
+      "profile": "selfish_striker"
+    },
+    {
+      "player_id": "SHA_01",
+      "team_id": "SHA",
+      "name": "Sami Vale",
+      "position": "GK",
+      "shirt": 1,
+      "max_speed": 6.43,
+      "height_cm": 191,
+      "strength": 0.6,
+      "technique": 0.7,
+      "defending": 0.64,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "GK",
+      "profile": "keeper"
+    },
+    {
+      "player_id": "SHA_02",
+      "team_id": "SHA",
+      "name": "Jonas Korhan",
+      "position": "RB",
+      "shirt": 2,
+      "max_speed": 8.01,
+      "height_cm": 176,
+      "strength": 0.64,
+      "technique": 0.6,
+      "defending": 0.7,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "RB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "SHA_03",
+      "team_id": "SHA",
+      "name": "Sami Petrov",
+      "position": "CB",
+      "shirt": 3,
+      "max_speed": 8.82,
+      "height_cm": 187,
+      "strength": 0.62,
+      "technique": 0.4,
+      "defending": 0.91,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "CB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "SHA_04",
+      "team_id": "SHA",
+      "name": "Theo Aydin",
+      "position": "CB",
+      "shirt": 4,
+      "max_speed": 8.69,
+      "height_cm": 185,
+      "strength": 0.27,
+      "technique": 0.34,
+      "defending": 0.63,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "CB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "SHA_05",
+      "team_id": "SHA",
+      "name": "Sami Novak",
+      "position": "LB",
+      "shirt": 5,
+      "max_speed": 8.79,
+      "height_cm": 178,
+      "strength": 0.73,
+      "technique": 0.57,
+      "defending": 0.65,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "LB",
+      "profile": "solid_defender"
+    },
+    {
+      "player_id": "SHA_07",
+      "team_id": "SHA",
+      "name": "Ravi Yilmaz",
+      "position": "CM",
+      "shirt": 7,
+      "max_speed": 7.99,
+      "height_cm": 185,
+      "strength": 0.43,
+      "technique": 0.48,
+      "defending": 0.19,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 73,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "SHA_06",
+      "team_id": "SHA",
+      "name": "Sami Quinn",
+      "position": "DM",
+      "shirt": 6,
+      "max_speed": 8.13,
+      "height_cm": 181,
+      "strength": 0.47,
+      "technique": 0.18,
+      "defending": 0.5,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "DM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "SHA_08",
+      "team_id": "SHA",
+      "name": "Yusuf Tanaka",
+      "position": "CM",
+      "shirt": 8,
+      "max_speed": 8.22,
+      "height_cm": 183,
+      "strength": 0.22,
+      "technique": 0.42,
+      "defending": 0.64,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 60,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "SHA_10",
+      "team_id": "SHA",
+      "name": "Arda Korhan",
+      "position": "RW",
+      "shirt": 10,
+      "max_speed": 8.85,
+      "height_cm": 182,
+      "strength": 0.59,
+      "technique": 0.65,
+      "defending": 0.32,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "RW",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "SHA_12",
+      "team_id": "SHA",
+      "name": "Leo Petrov",
+      "position": "ST",
+      "shirt": 12,
+      "max_speed": 9.34,
+      "height_cm": 190,
+      "strength": 0.59,
+      "technique": 0.6,
+      "defending": 0.5,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 94,
+      "role": "ST",
+      "profile": "selfish_striker"
+    },
+    {
+      "player_id": "SHA_11",
+      "team_id": "SHA",
+      "name": "Hugo Moreau",
+      "position": "LW",
+      "shirt": 11,
+      "max_speed": 8.79,
+      "height_cm": 174,
+      "strength": 0.54,
+      "technique": 0.61,
+      "defending": 0.42,
+      "started": true,
+      "minute_on": 0,
+      "minute_off": 75,
+      "role": "LW",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "NRV_18",
+      "team_id": "NRV",
+      "name": "Milo Weber",
+      "position": "RW",
+      "shirt": 18,
+      "max_speed": 9.52,
+      "height_cm": 166,
+      "strength": 0.66,
+      "technique": 0.74,
+      "defending": 0.21,
+      "started": false,
+      "minute_on": 58,
+      "minute_off": 94,
+      "role": "LM",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "SHA_17",
+      "team_id": "SHA",
+      "name": "Yusuf Novak",
+      "position": "CM",
+      "shirt": 17,
+      "max_speed": 8.77,
+      "height_cm": 184,
+      "strength": 0.53,
+      "technique": 0.53,
+      "defending": 0.6,
+      "started": false,
+      "minute_on": 60,
+      "minute_off": 94,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "NRV_17",
+      "team_id": "NRV",
+      "name": "Kaan Kaya",
+      "position": "CM",
+      "shirt": 17,
+      "max_speed": 8.61,
+      "height_cm": 183,
+      "strength": 0.52,
+      "technique": 0.69,
+      "defending": 0.32,
+      "started": false,
+      "minute_on": 64,
+      "minute_off": 94,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "SHA_09",
+      "team_id": "SHA",
+      "name": "Emre Costa",
+      "position": "AM",
+      "shirt": 9,
+      "max_speed": 7.92,
+      "height_cm": 175,
+      "strength": 0.54,
+      "technique": 0.9,
+      "defending": 0.69,
+      "started": false,
+      "minute_on": 73,
+      "minute_off": 94,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    },
+    {
+      "player_id": "SHA_18",
+      "team_id": "SHA",
+      "name": "Arda Tanaka",
+      "position": "RW",
+      "shirt": 18,
+      "max_speed": 8.8,
+      "height_cm": 176,
+      "strength": 0.58,
+      "technique": 0.58,
+      "defending": 0.45,
+      "started": false,
+      "minute_on": 75,
+      "minute_off": 94,
+      "role": "LW",
+      "profile": "flair_winger"
+    },
+    {
+      "player_id": "NRV_06",
+      "team_id": "NRV",
+      "name": "Deniz Vale",
+      "position": "DM",
+      "shirt": 6,
+      "max_speed": 8.67,
+      "height_cm": 185,
+      "strength": 0.67,
+      "technique": 0.36,
+      "defending": 0.6,
+      "started": false,
+      "minute_on": 79,
+      "minute_off": 94,
+      "role": "CM",
+      "profile": "safe_playmaker"
+    }
+  ],
+  "unused_substitutes": {
+    "NRV": [
+      {
+        "player_id": "NRV_09",
+        "name": "Emre Silva",
+        "position": "AM"
+      },
+      {
+        "player_id": "NRV_14",
+        "name": "Iker Ferro",
+        "position": "GK"
+      },
+      {
+        "player_id": "NRV_15",
+        "name": "Jonas Tanaka",
+        "position": "CB"
+      },
+      {
+        "player_id": "NRV_16",
+        "name": "Ravi Reyes",
+        "position": "LB"
+      }
+    ],
+    "SHA": [
+      {
+        "player_id": "SHA_13",
+        "name": "Kenji Costa",
+        "position": "ST"
+      },
+      {
+        "player_id": "SHA_14",
+        "name": "Luca Dubois",
+        "position": "GK"
+      },
+      {
+        "player_id": "SHA_15",
+        "name": "Milo Vale",
+        "position": "CB"
+      },
+      {
+        "player_id": "SHA_16",
+        "name": "Kenji Moreau",
+        "position": "LB"
+      }
+    ]
+  },
+  "profiles": {
+    "safe_playmaker": {
+      "temperature": 0.01,
+      "shot_bias": 0.0075,
+      "long_shot_bias": 0.034,
+      "dribble_bias": -0.01,
+      "long_ball_bias": 0.012,
+      "mistake_rate": 0.03
+    },
+    "selfish_striker": {
+      "temperature": 0.02,
+      "shot_bias": 0.0235,
+      "long_shot_bias": 0.014,
+      "dribble_bias": 0.01,
+      "mistake_rate": 0.1
+    },
+    "flair_winger": {
+      "temperature": 0.025,
+      "shot_bias": 0.0115,
+      "long_shot_bias": 0.032,
+      "dribble_bias": 0.03,
+      "cross_bias": 0.03,
+      "mistake_rate": 0.08
+    },
+    "solid_defender": {
+      "temperature": 0.012,
+      "shot_bias": 0.0025,
+      "long_shot_bias": -0.008,
+      "dribble_bias": -0.02,
+      "cross_bias": 0.02,
+      "long_ball_bias": 0.03,
+      "mistake_rate": 0.04
+    },
+    "keeper": {
+      "temperature": 0.01,
+      "shot_bias": -1.0,
+      "long_shot_bias": 0.0,
+      "dribble_bias": -1.0,
+      "long_ball_bias": 0.03,
+      "mistake_rate": 0.02
+    }
+  }
+}
