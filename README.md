@@ -168,7 +168,7 @@ least 7.
 
 ## Testing instructions for judges
 
-1. Open `<AZURE_APP_URL>`. No login is needed. The demo stays up until judging ends (10 November 2026).
+1. Open https://decision-lens-g3hxhha6dtepdzbg.swedencentral-01.azurewebsites.net/. No login is needed. The demo stays up until judging ends (10 November 2026).
 2. Open a match that is already analysed, or press **Load sample match and find critical moments** to analyse a new
    30-minute piece of the sample match (a few minutes; progress is shown).
 3. Open a moment: look at the arrows, Decision-1's choice and the Coach's explanation. Then open a goal, the player
